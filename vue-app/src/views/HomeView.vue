@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useTheme } from 'vuetify'
 import { RouterLink } from 'vue-router'
+import Avatar from '../components/Avatar.vue'
 import LinkButton from '../components/LinkButton.vue'
 
 const theme = useTheme()
@@ -34,9 +35,7 @@ function toggleTheme() {
           />
 
           <div class="text-center">
-            <v-avatar class="mb-6" color="lime-accent-2" size="100">
-              <span class="text-h4 font-weight-bold text-grey-darken-4">AO</span>
-            </v-avatar>
+            <Avatar background-color="lime-accent-2" />
             <p class="text-overline text-primary mb-2">WELCOME TO MY CORNER OF THE INTERNET</p>
             <h1 class="text-h2 text-sm-h1 font-weight-bold mb-4">Ana Ospina</h1>
             <p class="text-body-1 text-medium-emphasis mx-auto mb-8 tagline">
