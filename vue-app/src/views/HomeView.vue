@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const isLightMode = ref(false)
 
@@ -52,6 +53,8 @@ function toggleTheme() {
           <span class="arrow" aria-hidden="true">↗</span>
         </a>
       </nav>
+
+      <RouterLink class="bio-link" to="/bio">Read my bio <span aria-hidden="true">→</span></RouterLink>
 
       <footer>
         <svg class="bike-icon" viewBox="0 0 64 32" role="img" aria-label="Bicycle">
@@ -237,6 +240,20 @@ footer {
   color: var(--text-muted);
   font-size: 0.68rem;
   letter-spacing: 0.04em;
+}
+
+.bio-link {
+  display: inline-flex;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: gap 0.25s ease;
+}
+
+.bio-link:hover {
+  gap: 0.7rem;
 }
 
 .bike-icon {
