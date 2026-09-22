@@ -53,7 +53,14 @@ function toggleTheme() {
         </a>
       </nav>
 
-      <footer>Made with intention · 2026</footer>
+      <footer>
+        <svg class="bike-icon" viewBox="0 0 64 32" role="img" aria-label="Bicycle">
+          <circle cx="14" cy="22" r="8" />
+          <circle cx="50" cy="22" r="8" />
+          <path d="M14 22 25 8h10l15 14M25 8l5 14h12M30 8h-5M35 8l-3-4M25 8h-5" />
+        </svg>
+        <span>Made with intention · 2026</span>
+      </footer>
     </section>
   </main>
 </template>
@@ -222,10 +229,24 @@ h1 {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin-top: 2rem;
   color: var(--text-muted);
   font-size: 0.68rem;
   letter-spacing: 0.04em;
+}
+
+.bike-icon {
+  width: 1.5rem;
+  height: auto;
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .light-mode {

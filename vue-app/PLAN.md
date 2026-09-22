@@ -7,4 +7,5 @@ Replace the starter content in this Vue project with a link-in-bio page. Here's 
 - Darkmode by default with a light/dark toggle button
 - Smooth hover animations on the buttons
 - Use Google Font: Poppins
+- Add a single color, outline bike icon in the footer
 - Clean up any starter files or components I don't need
